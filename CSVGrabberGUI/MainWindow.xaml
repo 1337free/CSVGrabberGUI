@@ -1,0 +1,19 @@
+﻿<Window x:Name="CSV_Parser_Ugly_GUI_2_1" x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CSV_Parser_Ugly_GUI_2.1" Height="174" Width="430" FontWeight="Bold" ResizeMode="NoResize" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+  <Grid>
+    <TextBox x:Name="txtURL" HorizontalAlignment="Left" Height="23" Margin="127,11,0,0" VerticalAlignment="Top" Width="200" Cursor="IBeam" ToolTip="Enter URL Here" TabIndex="0"/>
+    <Label x:Name="lblURL" Content="File Location (URL):" HorizontalAlignment="Left" Margin="6,8,0,0" VerticalAlignment="Top" Width="121"/>
+    <Button x:Name="btnTest" Content="Test" HorizontalAlignment="Left" Margin="108,102,0,0" VerticalAlignment="Top" Width="75" Click="btnTest_Click" TabIndex="5" ToolTip="Downloads and converts the CSV file according to input settings"/>
+    <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="28,102,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click" TabIndex="4" IsDefault="True" ToolTip="Saves configuration to the registry"/>
+    <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="23" Margin="127,37,0,0" VerticalAlignment="Top" Width="200" Cursor="IBeam" ToolTip="Enter output location here" TabIndex="1"/>
+    <Label x:Name="lblOutput" Content="Output Location:" HorizontalAlignment="Left" Margin="6,34,0,0" VerticalAlignment="Top" Width="121"/>
+    <TextBox x:Name="txtTime" HorizontalAlignment="Left" Height="23" Margin="127,63,0,0" VerticalAlignment="Top" Width="40" Cursor="IBeam" ToolTip="Enter scheduled time to run here" MaxLength="4" TabIndex="3"/>
+    <Label x:Name="lblScheduledTime" Content="Scheduled Time:" HorizontalAlignment="Left" Margin="6,60,0,0" VerticalAlignment="Top" Width="121"/>
+    <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="332,37,0,0" TabIndex="2" Click="btnBrowse_Click"/>
+    <Button x:Name="btnClearData" Content="Clear Saved Data" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="188,102,0,0" Click="btnClearData_Click" ToolTip="Clears data from the registry and this window"/>
+    <Label x:Name="lblAbout" Content="About" HorizontalAlignment="Left" Margin="357,102,0,0" VerticalAlignment="Top" Width="50" Cursor="Hand" Foreground="#FFE6E6E6" GotMouseCapture="clickAbout" MouseLeftButtonDown="clickAbout"/>
+
+  </Grid>
+</Window>
